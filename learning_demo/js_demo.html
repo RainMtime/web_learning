@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="utf-8">
+       <script src="firstjs.js"></script>
+    </head>
+
+    <body>
+      <p id="demo">Javascript 能够直接写入HTML 输出流中:</p>
+      <script>
+       document.write("<h1>这是一个标题哈哈</h1>");
+      </script>
+
+      <script>
+      function myFunction(){
+          x = document.getElementById("demo");
+          //改变文案
+          x.innerHTML = "Hello JavaScript";
+          //改变样式
+          x.style.color = "#ff0000"
+          //如果是img 类型可以随意替换图片资源
+          if(x.src.match("bulbon")){
+            //  x.src  = "xxx.png";
+          }else{
+              //to do something for change this icon
+          }
+      }
+      </script>
+
+      <script>
+          //检验输入是否是数字
+       function checkinput(){
+         var  temp = document.getElementById("demo").value;
+         if(x ==""|| isNaN(x)){
+             alert("不是数字");
+         }
+       }
+      </script>
+    
+      <button type="button" onclick="myFirstJsFun()">点我呀</button>
+    </body>
+</html>
