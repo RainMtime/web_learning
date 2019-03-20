@@ -28,5 +28,4 @@ var person = {
 
 //非严格模式下给未声明变量赋值创建的全局变量，是全局对象的可配置属性，可以删除。然后就不可在用
 carname = "Sony";
-delete carname;
-console.log(carname);
+
