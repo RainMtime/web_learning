@@ -151,4 +151,13 @@ var abss = function(x){
     return 2;
 }
 
-//
+//解构赋值操作
+var person = {
+    name: '小明',
+    age: 20,
+    gender: 'male',
+    passport: 'G-12345678',
+    school: 'No.4 middle school'
+};
+var {name, age, passport} = person;
+
